@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+
+<title>Grid</title>
+<meta property="og:title" content="Draft U.S. Web Design Standards | Visual style" />
+<meta name="description" content="">
+<meta property="og:description" content="" />
+<link rel="canonical" href="/visual-style/" />
+
+<!--[if lt IE 9]>
+  <script src="assets/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link rel="shortcut icon" type="image/ico" href="assets/img/favicons/favicon.ico" />
+<link rel="icon" type="image/png" href="assets/img/favicons/favicon.png" />
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192.png" />
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-57.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicons/favicon-72.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favicons/favicon-114.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="assets/css/prism.css">
+<link rel="stylesheet" href="assets/css/styleguide.css">
+</head>
+
+<body class="visual-style">
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-site-header" role="banner">
+  <div class="usa-disclaimer"> <span class="usa-disclaimer-official"> <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="assets/img/us_flag_small.png"> An official website of the United States Government </span> <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span> </div>
+  <nav class="usa-site-navbar"> <a class="menu-btn" href="#">Menu</a>
+    <div class="logo" id="logo">
+      <h1> <a href="/" accesskey="1" title="Home" aria-label="Home"> Draft U.S. Web Design Standards</a> </h1>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+      <li> <a class="usa-button" href="https://github.com/18F/web-design-standards/releases/download/v0.9.4/uswds-0.9.4.zip" onclick="ga('send', 'event', 'Downloaded framework', 'Clicked download button inside site');">Download code</a> </li>
+      <li> <a class="usa-button usa-button-outline" href="https://github.com/18F/web-design-standards" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"> View on GitHub </a> </li>
+    </ul>
+  </nav>
+</header>
+<div class="overlay"></div>
+<aside class="sidenav menu-content">
+  <nav>
+    <ul class="usa-sidenav-list">
+      <li> <a  href="/getting-started/">Getting started</a> </li>
+      <li> <a href="/Visual_Style.html">Visual style</a> </li>
+      <li> <a class="usa-current" href="/grids/">Grid</a> </li>
+      <li> <a  href="/buttons/">Buttons</a> </li>
+      <li> <a  href="/labels/">Labels</a> </li>
+      <li> <a  href="/tables/">Tables</a> </li>
+      <li> <a  href="/alerts/">Alerts</a> </li>
+      <li> <a  href="/accordions/">Accordions</a> </li>
+      <li> <a  href="/form-controls/">Form controls</a>
+        <ul class="usa-sidenav-sub_list form-controls-sublist">
+          <li> <a href="/form-controls/#text-inputs">Text inputs and area</a> </li>
+          <li> <a href="/form-controls/#dropdown">Dropdown</a> </li>
+          <li> <a href="/form-controls/#checkboxes">Checkboxes</a> </li>
+          <li> <a href="/form-controls/#radiobuttons">Radio buttons</a> </li>
+          <li> <a href="/form-controls/#date-input">Date input</a> </li>
+        </ul>
+      </li>
+      <li> <a  href="/form-templates/">Form templates</a>
+        <ul class="usa-sidenav-sub_list form-templates-sublist">
+          <li> <a href="/form-templates/#name-form">Name form</a> </li>
+          <li> <a href="/form-templates/#address-form">Address form</a> </li>
+          <li> <a href="/form-templates/#login-form">Sign-in form</a> </li>
+          <li> <a href="/form-templates/#password-reset-form">Password reset form</a> </li>
+        </ul>
+      </li>
+      <li> <a  href="/search-bar/">Search bar</a> </li>
+      <li> <a  href="/sidenav/">Side navigation</a> </li>
+      <li> <a  href="/footers/">Footers</a>
+        <ul class="usa-sidenav-sub_list footers-sublist">
+          <li> <a href="/footers/#big-footer">Big footer</a> </li>
+          <li> <a href="/footers/#medium-footer">Medium footer</a> </li>
+          <li> <a href="/footers/#slim-footer">Slim footer</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<div class="main-content" id="main-content">
+  <div class="styleguide-content usa-content">
+    <h1 id="visual-style">Grids</h1>
+    <P class="usa-font-lead">This 12-column, responsive grid provides structure for website content.</P>
+    <h2 class="usa-heading">Grid</h2>
+    <div class="preview preview-no_border grid-example grid-example-text">
+      <p>Grid content will go here.</p>
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <h3>One Half</h3>
+      <p>Georgia is a state located in the southeastern United States. It was established in 1732 and was the last of the original Thirteen Colonies. Named after King George II of Great Britain, Georgia was the fourth state to ratify the United States Constitution, on January 2, 1788. Georgia declared its secession from the Union on January 19, 1861, and was one of the original seven Confederate states. Georgia was the last state to be restored to the Union, on July 15, 1870. Georgia is the 24th largest and the 8th most populous of the 50 United States.</p>
+    </div>
+    <div class="usa-width-one-half">
+      <h3>One Half</h3>
+      <p>Michigan is a state in the Great Lakes region of the Midwestern United States. The name Michigan is the French form of the Ojibwa word mishigamaa, meaning "large water" or "large lake". Michigan is the tenth most populous state, with the 11th most extensive total area (the largest state by total area east of the Mississippi River). Its capital is Lansing, and the largest city is Detroit. Michigan is the only state to consist of two peninsulas. A person in the state is never more than six miles from a natural water source or 85 miles from a Great Lakes shoreline.</p>
+    </div>
+  </div>
+  <div class="usa-grid">
+    <div class="usa-width-one-third">
+      <h3>One Third</h3>
+      <p>Maryland is a state located in the Mid-Atlantic region of the United States, bordering Virginia, West Virginia, and Washington, D.C. to its south and west; Pennsylvania to its north; and Delaware to its east.</p>
+    </div>
+    <div class="usa-width-one-third">
+      <h3>One Third</h3>
+      <p>Massachusetts is a state in the northeastern United States, bordered by Rhode Island and Connecticut to the south, New York to the west, Vermont and New Hampshire to the north, and the Atlantic Ocean to the east.</p>
+    </div>
+    <div class="usa-width-one-third">
+      <h3>One Third</h3>
+      <p>North Carolina is a state in the Southeastern United States. North Carolina borders South Carolina and Georgia to the south, Tennessee to the west, Virginia to the north, and the Atlantic Ocean to the east.</p>
+    </div>
+  </div>
+  <div class="usa-grid">
+    <div class="usa-width-one-fourth">
+      <h3>One Fourth</h3>
+      <p>California is a state located on the West Coast of the United States. It is the most populous U.S. state, with 38 million people, and the third largest state by area (after Alaska and Texas).</p>
+    </div>
+    <div class="usa-width-one-fourth">
+      <h3>One Fourth</h3>
+      <p>Illinois is a state in the Midwestern United States. It is the 5th most populous state and 25th largest state in terms of land area, and is often noted as a microcosm of the entire country.</p>
+    </div>
+    <div class="usa-width-one-fourth">
+      <h3>One Fourth</h3>
+      <p>Maine is a state in the New England region of the northeastern United States. In spite of its maritime position, it has a continental climate even in coastal cities such as its largest city Portland.</p>
+    </div>
+    <div class="usa-width-one-fourth">
+      <h3>One Fourth</h3>
+      <p>Indiana is a U.S. state located in the midwestern and Great Lakes regions of North America. Indiana is the 38th largest by area and the 16th most populous of the 50 United States.</p>
+    </div>
+  </div>
+  <div class="usa-grid">
+    <div class="usa-width-two-thirds">
+      <h3>Two Thirds</h3>
+      <p>Oregon is a state in the Pacific Northwest of the United States. Oregon is bordered on the west by the Pacific Ocean, on the north by Washington, on the south by California, on the east by Idaho, and on the southeast by Nevada. The Columbia River delineates much of Oregon's northern boundary, and the Snake River delineates much of the eastern boundary. It is one of only three states of the contiguous United States to have a coastline on the Pacific Ocean. The capital of Oregon is Salem, the second most populous of its cities, with 160,614 residents (2013 estimate).</p>
+    </div>
+    <div class="usa-width-one-third">
+      <h3>One Third</h3>
+      <p>Minnesota is a state in the Midwestern United States. Minnesota was admitted as the 32nd state on May 11, 1858, created from the eastern half of the Minnesota Territory. Its name comes from the Dakota word for "clear blue water".</p>
+    </div>
+  </div>
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <h3>One Half</h3>
+      <p>Virginia, is a U.S. state located in the South Atlantic region of the United States. Virginia, formally the Commonwealth of Virginia, is nicknamed the "Old Dominion" due to its status as the first colonial possession established in mainland British America, and "Mother of Presidents" because eight U.S. presidents were born there, more than any other state. The geography and climate of the Commonwealth are shaped by the Blue Ridge Mountains and the Chesapeake Bay, which provide habitat for much of its flora and fauna.</p>
+    </div>
+    <div class="usa-width-one-fourth">
+      <h3>One Fourth</h3>
+      <p>New York is a state in the Northeastern and Mid-Atlantic regions of the United States. New York is the twenty-seventh-most extensive, the fourth-most populous, and the seventh-most densely populated of the 50 United States.</p>
+    </div>
+    <div class="usa-width-one-fourth">
+      <h3>One Fourth</h3>
+      <p>Washington, D.C. is the capital of the United States, bordered by the states of Maryland and Virginia. Formally known as the District of Columbia, it is also commonly referred to as "Washington", "the District", or simply "D.C."</p>
+    </div>   
+  </div>
+    </div>
+  </div>
+  <footer class="usa-styleguide-footer">
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <p>Feedback? Create an issue on the <a href="https://github.com/18F/web-design-standards">GitHub repository</a> or email us at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.</p>
+        <p>Have an idea? Read our <a href="https://github.com/18F/web-design-standards/blob/master/CONTRIBUTING.md">contribution guidelines</a>.</p>
+      </div>
+      <div class="usa-width-one-half usa-end-row">
+        <p>As a work of the United States government, this project is <a href="https://github.com/18F/web-design-standards/blob/master/LICENSE.md">in the public domain</a>.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/vendor/jquery-1.11.3.min.js"></script> 
+<!--[if lt IE 9]>
+  <script src="assets/js/vendor/selectivizr-min.js"></script>
+  <script src="assets/js/vendor/respond.js"></script>
+  <script src="assets/js/vendor/rem.min.js"></script>
+<![endif]--> 
+
+<script src="assets/js/vendor/prism.js"></script> 
+<script src="assets/js/vendor/styleguide.js"></script> 
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+
+<title>Accordian</title>
+<meta property="og:title" content="Draft U.S. Web Design Standards | Visual style" />
+<meta name="description" content="">
+<meta property="og:description" content="" />
+<link rel="canonical" href="/visual-style/" />
+
+<!--[if lt IE 9]>
+  <script src="assets/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link rel="shortcut icon" type="image/ico" href="assets/img/favicons/favicon.ico" />
+<link rel="icon" type="image/png" href="assets/img/favicons/favicon.png" />
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192.png" />
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-57.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicons/favicon-72.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favicons/favicon-114.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="assets/css/prism.css">
+<link rel="stylesheet" href="assets/css/styleguide.css">
+</head>
+
+<body class="visual-style">
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-site-header" role="banner">
+  <div class="usa-disclaimer"> <span class="usa-disclaimer-official"> <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="assets/img/us_flag_small.png"> An official website of the United States Government </span> <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span> </div>
+  <nav class="usa-site-navbar"> <a class="menu-btn" href="#">Menu</a>
+    <div class="logo" id="logo">
+      <h1> <a href="mandatory.html" accesskey="1" title="Home" aria-label="Home"> Draft U.S. Web Design Standards</a> </h1>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+      <li> <a class="usa-button" href="https://github.com/18F/web-design-standards/releases/download/v0.9.4/uswds-0.9.4.zip" onclick="ga('send', 'event', 'Downloaded framework', 'Clicked download button inside site');">Download code</a> </li>
+      <li> <a class="usa-button usa-button-outline" href="https://github.com/18F/web-design-standards" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"> View on GitHub </a> </li>
+    </ul>
+  </nav>
+</header>
+<div class="overlay"></div>
+<aside class="sidenav menu-content">
+  <nav>
+    <ul class="usa-sidenav-list">
+      <li> <a  href="/getting-started/">Getting started</a> </li>
+      <li> <a href="Visual_Style.html">Visual style</a> </li>
+      <li> <a class="usa-current" href="/grids/">Grid</a> </li>
+      <li> <a  href="/buttons/">Buttons</a> </li>
+      <li> <a  href="/labels/">Labels</a> </li>
+      <li> <a  href="/tables/">Tables</a> </li>
+      <li> <a  href="/alerts/">Alerts</a> </li>
+      <li> <a  href="/accordions/">Accordions</a> </li>
+      <li> <a  href="/form-controls/">Form controls</a>
+        <ul class="usa-sidenav-sub_list form-controls-sublist">
+          <li> <a href="/form-controls/#text-inputs">Text inputs and area</a> </li>
+          <li> <a href="/form-controls/#dropdown">Dropdown</a> </li>
+          <li> <a href="/form-controls/#checkboxes">Checkboxes</a> </li>
+          <li> <a href="/form-controls/#radiobuttons">Radio buttons</a> </li>
+          <li> <a href="/form-controls/#date-input">Date input</a> </li>
+        </ul>
+      </li>
+      <li> <a  href="/form-templates/">Form templates</a>
+        <ul class="usa-sidenav-sub_list form-templates-sublist">
+          <li> <a href="/form-templates/#name-form">Name form</a> </li>
+          <li> <a href="/form-templates/#address-form">Address form</a> </li>
+          <li> <a href="/form-templates/#login-form">Sign-in form</a> </li>
+          <li> <a href="/form-templates/#password-reset-form">Password reset form</a> </li>
+        </ul>
+      </li>
+      <li> <a  href="/search-bar/">Search bar</a> </li>
+      <li> <a  href="/sidenav/">Side navigation</a> </li>
+      <li> <a  href="/footers/">Footers</a>
+        <ul class="usa-sidenav-sub_list footers-sublist">
+          <li> <a href="/footers/#big-footer">Big footer</a> </li>
+          <li> <a href="/footers/#medium-footer">Medium footer</a> </li>
+          <li> <a href="/footers/#slim-footer">Slim footer</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<div class="main-content" id="main-content">
+  <div class="styleguide-content usa-content">
+    <h1 id="visual-style">Accordians</h1>
+    <P class="usa-font-lead">Accordions are a list of headers that can be clicked to hide or reveal additional content.</P>
+    <div class="preview"> 
+    <h6>Borderless</h6>
+
+  <div class="usa-accordion">
+    <ul class="usa-unstyled-list">
+      <li>
+        <button class="usa-button-unstyled" aria-expanded="true" aria-controls="amendment-1">
+          First Amendment
+        </button>
+        <div id="amendment-1" class="usa-accordion-content">
+          <p>
+          Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-2">
+          Second Amendment
+        </button>
+        <div id="amendment-2" class="usa-accordion-content">
+          <p>
+          A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-3">
+          Third Amendment
+        </button>
+        <div id="amendment-3" class="usa-accordion-content">
+          <p>
+          No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-4">
+          Fourth Amendment
+        </button>
+        <div id="amendment-4" class="usa-accordion-content">
+          <p>
+          The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-5">
+          Fifth Amendment
+        </button>
+        <div id="amendment-5" class="usa-accordion-content">
+          <p>
+          No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <h6>Bordered</h6>
+
+  <div class="usa-accordion-bordered">
+    <ul class="usa-unstyled-list">
+      <li>
+        <button class="usa-button-unstyled" aria-expanded="true" aria-controls="amendment-b-1">
+          First Amendment
+        </button>
+        <div id="amendment-b-1" class="usa-accordion-content">
+          <p>
+          Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-b-2">
+          Second Amendment
+        </button>
+        <div id="amendment-b-2" class="usa-accordion-content">
+          <p>
+          A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-b-3">
+          Third Amendment
+        </button>
+        <div id="amendment-b-3" class="usa-accordion-content">
+          <p>
+          No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-b-4">
+          Fourth Amendment
+        </button>
+        <div id="amendment-b-4" class="usa-accordion-content">
+          <p>
+          The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-controls="amendment-b-5">
+          Fifth Amendment
+        </button>
+        <div id="amendment-b-5" class="usa-accordion-content">
+          <p>
+          No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+    </div>
+  </div>
+  <footer class="usa-styleguide-footer">
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <p>Feedback? Create an issue on the <a href="https://github.com/18F/web-design-standards">GitHub repository</a> or email us at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.</p>
+        <p>Have an idea? Read our <a href="https://github.com/18F/web-design-standards/blob/master/CONTRIBUTING.md">contribution guidelines</a>.</p>
+      </div>
+      <div class="usa-width-one-half usa-end-row">
+        <p>As a work of the United States government, this project is <a href="https://github.com/18F/web-design-standards/blob/master/LICENSE.md">in the public domain</a>.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/vendor/jquery-1.11.3.min.js"></script> 
+<!--[if lt IE 9]>
+  <script src="assets/js/vendor/selectivizr-min.js"></script>
+  <script src="assets/js/vendor/respond.js"></script>
+  <script src="assets/js/vendor/rem.min.js"></script>
+<![endif]--> 
+
+<script src="assets/js/vendor/prism.js"></script> 
+<!--<script src="assets/js/vendor/styleguide.js"></script> -->
+<script src="assets/js/uswds.min.js"></script>
+</body>
+</html>
